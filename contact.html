@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family:'Times New Roman', Times, serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+    /*container styling*/
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 20px;
+   position: center;
+}
+.contact-header h1 {
+   font-size: 36px;
+   margin-bottom: 10px;
+}
+.contact-header p {
+   font-size: 18px;
+   color: #666;
+}
+.contact-form {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+.form-section {
+   flex-basis: 48%;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+form {
+display: flex;
+flex-direction: column;
+}
+label {
+   margin-bottom: 10px;
+   font-size: 16px;
+}
+input, textarea {
+   padding: 12px;
+   margin-bottom: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+}
+textarea {
+   resize: none;
+   height: 150px;
+}
+.submit-btn {
+   padding: 12px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+.submit-btn:hover {
+   background-color: #0056b3;
+}
+/*contact info section*/
+.contact-info {
+   flex-basis: 48%;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info h3 {
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+.contact-info p {
+   font-size: 16px;
+   color: #666;
+   margin-bottom: 10px;
+}
+/*Social icons*/
+.social-icons {
+   margin-top: 20px;
+}
+.social-icons a {
+   margin-right: 10px;
+   font-size: 24px;
+   color: #007bff;
+   text-decoration: none;
+}
+.social-icons a:hover {
+   color: #0056b3;
+}
+/*Map section*/
+.map {
+   width: 100%;
+   height: 300px;
+   margin-top: 40px;
+   border-radius: 10px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you.Feel free to reach out using the form below or visit us at our office.</p>
+        </div>
+        <div class="contact-form">
+            <div class="form-section">
+                <form action="process_contact.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"required>
+            <label for="email">Email</label>
+            <input type="email"id="email"name="email"reqired>
+            <label for="subject">Subject</label>
+            <input type="text"id="subject"name="subject"reqired>
+            <label for="message">Message</label>
+            <textarea id="message"name="message"reqired></textarea>
+            <button type="submit"class="submit-btn">Send Message</button>
+            </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact information</h3>
+                <p><strong>Phone</strong>+91 9651084965, +91 7011169162</p>
+                <p><strong>Email:</strong>blmserviceslimited@gmail.com</p>
+                <p><strong>Address:</strong>Lokpur,Naini-Prayagraj</p>
+                <!--Social Links-->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/blmserviceslimited?igsh=dTA4bHNkaDN1bmw0&utm_source=qr"target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <!--Map section-->
+        <div>
+            <iframe class="map"src=></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

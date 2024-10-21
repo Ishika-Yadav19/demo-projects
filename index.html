@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLM - service website</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="https://fonts.google.com/specimen/Merriweather?query=merri&stroke=Serif">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoPO3lRxKnDYBmiQO80yezpX0VZPZxtwZ5Ig&s">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home </a>
+                </li>
+                <li> <a href="contact.html"><i class="fa-solid fa-mobile-screen-button"></i>Contact Us</a>
+                    </li>
+                    <li><a href="about.html"><i class="fa-solid fa-circle-user"></i>About</a>
+                </li>
+                <li><a href="sign in.html"><i class="fa-solid fa-gear"></i>Sign In</a>
+                </li>  
+                <div class="hamburger" id="hamburgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> 
+                </ul>
+    </nav>
+
+
+        <!--Image section-->
+          <section class="curved-image-section">
+            <div class="image-container">
+                <img src="https://portcitybusiness.com/wp-content/uploads/2024/05/How-Plumbers-and-Electric-Companies.jpg"alt="Background Image">
+                </div>
+
+                <!--centered box with services-->
+                <div class="service-box">
+                <div class="service-header">
+                    <h2>Available Services</h2>
+                        <div class="arrow"id="arrow">&#x25BC;</div>
+                        </div>
+                        <ul class="service-list"id="servicesList">
+                            <li><a href="electrical.html">Electrical Repair</a></li>
+                            <li><a href="plumber.html">Plumbing</a></li>
+                            <li><a href="emergency.html">HAVC</a></li>
+            </ul>
+            </div>
+                </div>
+          </section>
+
+          <!--Whatsapp-->
+          <div class="whatsapp-section">
+            <p class="quote">Need instant help? / Book Service? Contact Us On Whatsapp!</p>
+            <a href="https://wa.me/9651084665" target="_blank"class="whatsapp-link">
+                <img src="https://images.sftcdn.net/images/t_app-icon-m/p/acc12314-96d1-11e6-b37d-00163ed833e7/2443124292/whatsapp-web-icon.png" alt="Whatsapp Logo"class="whatsapp-icon">
+                <span>Chat with us on Whatsapp</span>
+            </a>
+          </div>
+
+          <!--service description-->
+          <section class="sevice-details" id="service1"style="display:none">
+            <h3>Electrical Repair Service</h3>
+            <p>We provide top-quality electrical repair services.</p>
+          </section>
+          <section class="sevice-details" id="service2"style="display:none">
+            <h3>Plumbing Services</h3>
+            <p>We offer a wide range of plumbing solutions..</p>
+          </section>
+          <section class="sevice-details" id="service3"style="display:none">
+            <h3>HVAC</h3>
+            <p>We ensure your heating, ventilation, and air conditioning system woek efficiently..</p>
+          </section>
+
+                <!--About Us-->
+                <section class="about-section">
+                    <div class="about-box">
+                    <h2>About Us</h2>
+                    <p>
+                        At Bharti Local Market Services Limited, we are dedicated to making professional services both accessible and affordable. Our team of skilled engineers and technicians brings a blend of expertise and innovation to every project, ensuring top-notch solutions tailored to your needs.<br> From technical support to specialized project management, we are committed to delivering  best results with a focus on quality, efficiency, and customer satisfaction. Choose Bharti Local Market, where our team's dedication and expertise come together to turn your vision into realit</p>
+                </section>
+
+         <!-- REVIEWS-->
+                <!--review container-->
+                <div class="review-section">
+                    <button class="arrow-btn-left"
+                    onclick="slideRight()">&#10094;</button>
+
+                    <div class="review-container">
+                    <div class="review-box"><p>"Excellent Secrvices! The electrician were professional and solved our issues in no time!"-Ankita</p>
+                </div>
+                <div class="review-box"><p>"Highly recommand! The plumbing service was fast and very affordable!"-Shubham</p>
+                </div>
+                <div class="review-box">
+                    <p>"Great customer support and emergency services. They arrived within 30 minutes."-John</p>
+                </div>
+                <div class="review-box"><p>"Superb services with different categories!"-Aman</p>
+                </div>
+                <div class="review-box"><p>"24/7 available service with quick and fast response!"-Ishita</p>
+                </div>
+                <div class="review-box"><p>"The electrician service was quick and affordable!"-Shiv</p>
+                </div>
+                </div>
+            
+            <button class="arrow-btn-right"
+            onclick="slideRight()">&#10095;</button>
+            </div>
+        
+
+            <div class="reviews-section">
+                <div id="reviews">
+                </div>
+            <a href="reviewform.html">
+                <button id="leaveReviewBtn">Leave a Review</button>
+            </a>
+
+          <!--Contact information-->
+          <div class="contact-container">
+          <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>If you have any questions,feel free to reach out to us.</p>
+            <div class="contact-info">
+            <p><strong><i class="fa-solid fa-phone"></i> +91 9651084965, +91 7011169162</strong></p>
+            <p><strong><i class="fa-solid fa-envelope"></i> blmserviceslimited@gmail.com</strong></p>
+            <p><strong><i class="fa-solid fa-location-dot"></i> Lokpur,Naini-Prayagraj</strong></p>
+            </div>
+          </div>
+          </div>
+
+          <footer>
+            <a href="#" class="back-option">
+                Back to top
+            </a>
+    
+            <div class="footer-links">
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About BLM</a>
+                    <a>Investor Relations</a>
+                </ul>
+                <ul>
+                    <p>Make Money with Us</p>
+                    <a>Sell on BLM Business</a>
+                    <a>Sell apps on BLM</a>
+                    <a>Become an Affiliate</a>
+                </ul>
+                <ul>
+                    <p>BLM Payment Products</p>
+                    <a>BLM Business Card</a>
+                    <a>Shop with Points</a>
+                </ul>
+                <ul>
+                    <p>Let Us Help You</p>
+                    <a>BLM and COVID-19</a>
+                    <a>Your Account</a>
+                    <a>Manage Your Content and Devices</a>
+                    <a>BLM Assistant</a>
+                    <a>Help</a>
+                </ul>
+            </div>
+            <div class="country-info">
+                <div class="logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoPO3lRxKnDYBmiQO80yezpX0VZPZxtwZ5Ig&s">
+                </div>
+                <div class="options">
+                    <select>
+                        <option value="En">
+                            English
+                        </option>
+                    </select>
+                    <select>
+                        <option value="1">
+                            $ USD - U.S. Dollar
+                        </option>
+                    </select>
+    
+                    <select>
+                        <option value="4"> 
+                            United states
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="policies">
+                <div class="pages">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Your Ads Privacy Choices</a>
+                </div>
+                © 1996-2023, BLM.com, Inc. or its affiliates
+            </div>
+        </footer>
+
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>

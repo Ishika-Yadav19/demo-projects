@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h2>Welcome, <span id="username-display"></span>!</h2>
+        <button id="logout-btn">Log Out</button>
+    </div>
+    <script>
+        document.getElementById('logout-btn').addEventListener("click",function() {
+            localStorage.clear();
+            window.location.href = "sign in.html";
+        });
+    </script>
+    
+</body>
+</html>
